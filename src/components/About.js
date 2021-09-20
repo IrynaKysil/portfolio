@@ -3,7 +3,7 @@ import photo from "../profile-picture.jpg";
 
 const About = () => {
   return (
-    <div className="container py-5">
+    <div className="about-wrapper container" id="about">
       <div className="row">
         <div className="col-lg-6 col-xm-12">
         <div className="photo-wrap mb-5">
