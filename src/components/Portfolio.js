@@ -1,54 +1,50 @@
 import React from "react";
-import devConnector from "../images/dev-connector.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
+import devConnector from "../images/dev-connector.jpg";
+import ticTacToe from "../images/tic-tac-toe.jpg";
+import calcucalator from "../images/calculator.jpg"
+import taskList from "../images/task-list.jpg"
 
 const Portfolio = () => {
   return (
-    <div className="portfolio-wrapper" id="portfolio">
-      <div className="container">
+    <div className="portfolio-wrapper">
+      
+        <h1 className="text-uppercase text-center py-5" id="portfolio">portfolio</h1>
 
-        <h1 className="text-uppercase text-center py-5">portfolio</h1>
+        <div className="image-box-wrapper d-inline-box-flex  d-flex justify-content-around flex-wrap">      
         
-        <div className="image-box-wrapper row justify-content-center">
-          
-          <div class="col">
-            <div class="card">
-              <img src={devConnector} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">DevConnector</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Natoque penatibus et magnis dis parturient montes nascetur. At
-                  auctor urna nunc id cursus metus aliquam. Viverra nam libero
-                  justo laoreet sit amet cursus sit amet.{" "}
-                </p>
-                <a href="https://github.com/IrynaKysil/dev-connector" class="btn btn-primary">
-                GitHub
-                </a>
-              </div>
-            </div>
+          {/* Dev Connector */}        
+          <div className="portfolio-image-box">            
+            <img className="portfolio-images" src={devConnector} alt="Dev Connector Project Screenshot" />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="search-icon" icon={faSearchPlus} />
           </div>
 
-          <div class="col">
-            <div class="card">
-              <img src={devConnector} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">DevConnector</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Natoque penatibus et magnis dis parturient montes nascetur. At
-                  auctor urna nunc id cursus metus aliquam. Viverra nam libero
-                  justo laoreet sit amet cursus sit amet.{" "}
-                </p>
-                <a href="https://github.com/IrynaKysil/dev-connector" class="btn btn-primary">
-                  GitHub
-                </a>
-              </div>
-            </div>
+          {/* Task List */}
+          <div className="portfolio-image-box">
+            <img className="portfolio-images" src={taskList} alt="Task List Project Screenshot" />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="search-icon" icon={faSearchPlus} />
           </div>
+
+          {/* Calculator */}
+          <div className="portfolio-image-box">
+            <div className="overflow"></div>
+            <img className="portfolio-images" src={calcucalator} alt="Calculator Project Screenshot" />
+            <FontAwesomeIcon className="search-icon" icon={faSearchPlus} />
+          </div>
+
+          {/* Tic Tac Toe */}
+          <div className="portfolio-image-box">
+            <img className="portfolio-images" src={ticTacToe} alt="Tic Tac Toe Project Screenshot" />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="search-icon" icon={faSearchPlus} />
+          </div>
+          
         </div>
-      </div>
+      
     </div>
   );
 };

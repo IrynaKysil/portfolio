@@ -34,6 +34,7 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-grey) !important;
+  font-weight: bold;
   border-bottom: 0.1875rem solid transparent;
 }
 
@@ -124,16 +125,50 @@ nav ul li {
 
 .portfolio-wrapper {
   background: var(--primary-grey);
-  padding: 2rem 0;
 }
 
-.portfolio-image {
-  width: 16rem;
-  border: 1px solid var(--primary-orange);
-  padding: 0 0.5rem;
+.image-box-wrapper {  
+  max-width: 100%; 
 }
+
+.portfolio-images { 
+  width: 15rem;
+  margin: 1rem; 
+}
+
+/*------------------------- OVERFLOW ----------------------------*/
 
 .portfolio-image-box {
   position: relative;
-  margin: 1rem;
+}
+
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-grey);
+  width: 15rem;
+  height: 10rem; 
+  margin: 1rem; 
+  top: 0; 
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.search-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -9rem;
+  margin-top: 4.5rem;
+  color: var(--primary-red);
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .search-icon {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
