@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,300&display=swap');
 
 :root {
-  --primary-grey: rgb(78, 78, 74);
+  --primary-grey: rgb(102, 102, 97);
   --primary-orange: rgb(241, 162, 59);
   --primary-white: rgb(255, 255, 255);
   --primary-red: rgb(247, 17, 17);
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Exo', sans-serif;
+  font-family: 'Exo', sans-serif !important;
   }
 
 /*------------------------- NAVBAR ----------------------------*/
@@ -91,4 +91,26 @@ nav ul li {
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
   margin: 2rem;
+}
+
+/*------------------------- ABOUT ----------------------------*/
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img {
+  width: 16rem;
+}
+
+.about-heading {
+  color: var(--primary-grey);
+  text-transform: uppercase;
+} 
+
+@media(max-width: 468px) {
+  .about-img {
+    width: 10rem;
+  }
 }
