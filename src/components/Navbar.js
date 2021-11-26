@@ -1,5 +1,4 @@
 import React from "react";
-import picture from "../profile-picture.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -7,8 +6,7 @@ const Navbar = () => {
   return (
     <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">    
       <div className="container-fluid">
-        <a>IRYNA KYSIL - PORTFOLIO        
-        </a>
+        <a className="name-link" href="#home">IRYNA KYSIL - PORTFOLIO</a>
         <button
           className="navbar-toggler"
           type="button"

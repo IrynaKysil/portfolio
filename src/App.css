@@ -14,23 +14,24 @@ body {
 
 /*------------------------- NAVBAR ----------------------------*/
 
-.picture {
-  width: 6rem;
-  border-radius: 50%;
-}
 
 /* MENU LINKS */
-nav a.nav-link {
+
+.name-link {
+  text-decoration: none;
+}
+
+nav a.nav-link, .name-link {
   font-size: 0.8rem;  
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
 
-nav ul li {
+nav ul li  {
   text-transform: uppercase;
 }
 
-.navbar-nav > li > a {
+.navbar-nav > li > a, .name-link {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-grey) !important;
@@ -39,14 +40,9 @@ nav ul li {
 }
 
 .navbar-nav > li > a:hover {
-  border-bottom-color: green;  
+  border-bottom-color: var(--primary-grey);  
 }
 
-.navbar-brand {
-  max-width: 17.25rem;
-  padding: 0 !important;
-  height: 6rem !important;
-}
 
 /*------------------------- HEADER ----------------------------*/
 
@@ -136,7 +132,7 @@ nav ul li {
   margin: 1rem; 
 }
 
-/*------------------------- OVERFLOW ----------------------------*/
+/* OVERFLOW */
 
 .portfolio-image-box {
   position: relative;
@@ -164,11 +160,41 @@ nav ul li {
   margin-left: -9rem;
   margin-top: 4.5rem;
   color: var(--primary-red);
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .portfolio-image-box:hover .search-icon {
-  opacity: 70%;
+  opacity: 80%;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
+
+/* OVERFLOW BOX */
+.popupbox-wrapper {
+  display: flexbox;  
+  margin-top: 60px;
+  padding: 10px;  
+}
+
+.portfolio-popupbox-image {
+  justify-self: center;
+  align-self: center;
+  width: 80%;  
+  place-content: center;
+}
+
+.popup-text {
+  font-size: 13px;
+}
+
+.project-link {
+  font-size: 13px;
+  cursor: pointer;
+  color: var(--primary-grey);
+}
+
+.project-link:hover {
+  color: var(--primary-red);
+}
+
+
