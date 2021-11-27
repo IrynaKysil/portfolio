@@ -24,21 +24,7 @@ const Portfolio = () => {
       <b className="popup-text">Website:</b> <a className="project-link" onClick={ () => window.open("https://dev-connector-iryna-kysil.herokuapp.com", "_blank")}>https://dev-connector-iryna-kysil.herokuapp.com</a>
     </>
     )
-    PopupboxManager.open({ content })
-  }
-
-  const popupboxConfigDevConnector = {
-    titleBar: {
-      enable: true,
-      text: "Dev Connector App ",
-    },
-    content: {
-      style: {
-        "max-width": "45vw"              
-      }
-    },
-    fadeIn: true,
-    fadeInSpeed: 500
+    PopupboxManager.open({ content, config: {titleBar: {text: "DevConnector App"}}})
   }
 
   // Task List Popup Box
@@ -54,22 +40,8 @@ const Portfolio = () => {
       <b className="popup-text">Website:</b> <a className="project-link" onClick={ () => window.open("https://irynakysil.github.io/to-do-list/", "_blank")}>https://irynakysil.github.io/to-do-list/</a>
     </>
     )
-    PopupboxManager.open({ content })
-  }
-
-  const popupboxConfigTaskList = {
-    titleBar: {
-      enable: true,
-      text: "Task List",
-    },
-    content: {
-      style: {
-        "max-width": "45vw"              
-      }
-    },
-    fadeIn: true,
-    fadeInSpeed: 500
-  }
+    PopupboxManager.open({ content, config: {titleBar: {text: "Task List App"}}})
+  }  
 
   // Calculator Popup Box
   const popupboxCalculator = () => {    
@@ -84,23 +56,9 @@ const Portfolio = () => {
       <b className="popup-text">Website:</b> <a className="project-link" onClick={ () => window.open("https://irynakysil.github.io/calculator-js", "_blank")}>https://irynakysil.github.io/calculator-js</a>
     </>
     )
-    PopupboxManager.open({ content })
+    PopupboxManager.open({ content, config: { titleBar: {text: "Calculator App"}} })
   }
-
-  const popupboxConfigCalculator = {
-    titleBar: {
-      enable: true,
-      text: "Calculator",
-    },
-    content: {
-      style: {
-        "max-width": "45vw"              
-      }
-    },
-    fadeIn: true,
-    fadeInSpeed: 500
-  }
-
+ 
   // Tic Tac Toe Popup Box
   const popupboxTicTacToe = () => {    
     const content = (
@@ -114,27 +72,13 @@ const Portfolio = () => {
       <b className="popup-text">Website:</b> <a className="project-link" onClick={ () => window.open("https://irynakysil.github.io/tic-tac-toe", "_blank")}>https://irynakysil.github.io/tic-tac-toe</a>
     </>
     )
-    PopupboxManager.open({ content })
-  }
-
-  const popupboxConfigTicTacToe = {
-    titleBar: {
-      enable: true,
-      text: "Tic Tac Toe Game",
-    },
-    content: {
-      style: {
-        "max-width": "45vw"              
-      }
-    },
-    fadeIn: true,
-    fadeInSpeed: 500
-  }
+    PopupboxManager.open({ content, config: {titleBar: {text: "Tic Tac Toe Game"}}})
+  }  
 
   return (
     <div className="portfolio-wrapper">
       
-        <h1 className="text-uppercase text-center py-5" id="portfolio">portfolio</h1>
+        <h1 className="text-uppercase text-center py-5" id="projects">projects</h1>
 
         <div className="image-box-wrapper d-inline-box-flex  d-flex justify-content-around flex-wrap">      
         
@@ -167,10 +111,19 @@ const Portfolio = () => {
           </div>          
         </div>
         
-        <PopupboxContainer {...popupboxConfigDevConnector} />
-        <PopupboxContainer {...popupboxConfigTaskList} />
-        <PopupboxContainer {...popupboxConfigCalculator} />
-        <PopupboxContainer {...popupboxConfigTicTacToe} />
+        
+        <PopupboxContainer {...{
+    titleBar: {
+      enable: true      
+    },
+    content: {
+      style: {
+        "max-width": "45vw"              
+      }
+    },
+    fadeIn: true,
+    fadeInSpeed: 500
+  }} />
     </div>
   )
 };
