@@ -121,6 +121,7 @@ nav ul li  {
 
 .portfolio-wrapper {
   background: var(--primary-grey);
+  padding-bottom: 3rem;
 }
 
 .image-box-wrapper {  
@@ -197,4 +198,10 @@ nav ul li  {
   color: var(--primary-red);
 }
 
-
+/*------------------------- FOOTER ----------------------------*/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 3rem;     
+}

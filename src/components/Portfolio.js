@@ -8,7 +8,6 @@ import ticTacToe from "../images/tic-tac-toe.jpg";
 import calcucalator from "../images/calculator.jpg";
 import taskList from "../images/task-list.jpg";
 
-
 const Portfolio = () => {
 
   // DevConnector Popup Box
