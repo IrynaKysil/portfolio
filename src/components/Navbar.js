@@ -1,8 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faGithub} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => {
+
+  const githubIcon = <FontAwesomeIcon  size="2x" icon={faGithub} />; 
+  const linkedinIcon = <FontAwesomeIcon size="2x" icon={faLinkedin} />; 
+
   return (
     <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">    
       <div className="container-fluid">
@@ -40,11 +46,12 @@ const Navbar = () => {
               <a className="nav-link" href="#projects">
                 Projects
               </a>
+            </li>            
+            <li className="nav-item">
+            <a href="https://github.com/IrynaKysil" >{githubIcon}</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact">
-                Contact
-              </a>
+            <a href="https://www.linkedin.com/in/iryna-kysil/" >{linkedinIcon}</a>
             </li>
           </ul>
         </div>
