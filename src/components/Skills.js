@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const skillsItems= ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'TypeScrypt', 'React', 'NoSQL', 'MongoDB', 'Responsive design', 'Photoshop', 'Git', 'GitHub'];
 
 const Skills = () => {
