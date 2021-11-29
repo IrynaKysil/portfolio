@@ -10,10 +10,14 @@
 
 body {
   font-family: 'Exo', sans-serif !important;
-  }
+}
 
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+ 
 /*------------------------- NAVBAR ----------------------------*/
-
 
 /* MENU LINKS */
 
@@ -32,8 +36,8 @@ nav ul li  {
 }
 
 .navbar-nav > li > a, .name-link {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
+  margin-right: 0.6rem;
+  margin-left: 0.6rem;
   color: var(--primary-grey) !important;
   font-weight: bold;
   border-bottom: 0.1875rem solid transparent;
@@ -48,7 +52,7 @@ nav ul li  {
 
 .header-wraper {
   position: relative;
-  background: url("background.jpg");
+  background: url("images/background.jpg");
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -117,11 +121,11 @@ nav ul li  {
   }
 }
 
-/*------------------------- PORTFOLIO ----------------------------*/
+/*------------------------- PROJECTS ----------------------------*/
 
 .portfolio-wrapper {
-  background: var(--primary-grey);
-  padding-bottom: 3rem;
+  padding: 5rem 0; 
+  background: var(--primary-grey);  
 }
 
 .image-box-wrapper {  
@@ -204,4 +208,34 @@ nav ul li  {
   justify-content: center;
   align-items: center; 
   height: 3rem;     
+}
+
+/*------------------------- SKILLS ----------------------------*/
+
+
+.skills {
+  padding: 5rem 0; 
+  background-color: lightgray;
+  width: 100wv;
+}
+
+.skills-items-wrapper { 
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: center
+}
+
+.skills-item {
+  display: inline-block;
+  width: 15rem;
+  padding: 0.5rem;
+  background-color: darkgray;   
+  border: solid 1px grey;
+  border-radius: 8px;  
+  margin: 1rem;  
+}
+
+.skills-item > div {  
+  text-align: center;
+  justify-self: center;  
 }

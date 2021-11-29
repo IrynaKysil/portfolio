@@ -75,9 +75,9 @@ const Portfolio = () => {
   }  
 
   return (
-    <div className="portfolio-wrapper">
+    <div id="projects" className="portfolio-wrapper">
       
-        <h1 className="text-uppercase text-center py-5" id="projects">projects</h1>
+        <h1>projects</h1>
 
         <div className="image-box-wrapper d-inline-box-flex  d-flex justify-content-around flex-wrap">      
         

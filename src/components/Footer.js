@@ -1,9 +1,10 @@
 import React from "react";
 
+const year = new Date().getFullYear();
 const Footer = () => {
   return(
     <div class="footer">
-      Copyright © 2021 Iryna Kysil
+      Copyright © {year} Iryna Kysil
     </div>
   )
 }
