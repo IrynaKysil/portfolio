@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,300&display=swap");
 
 :root {
   --primary-grey: rgb(102, 102, 97);
@@ -9,14 +9,19 @@
 }
 
 body {
-  font-family: 'Exo', sans-serif !important;
+  font-family: "Exo", sans-serif !important;
 }
 
 h1 {
   text-transform: uppercase;
   text-align: center;
 }
- 
+
+img {
+  border: 1px;
+  border-radius: 10px;
+}
+
 /*------------------------- NAVBAR ----------------------------*/
 
 /* MENU LINKS */
@@ -25,17 +30,19 @@ h1 {
   text-decoration: none;
 }
 
-nav a.nav-link, .name-link {
-  font-size: 0.8rem;  
+nav a.nav-link,
+.name-link {
+  font-size: 0.8rem;
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
 
-nav ul li  {
+nav ul li {
   text-transform: uppercase;
 }
 
-.navbar-nav > li > a, .name-link {
+.navbar-nav > li > a,
+.name-link {
   margin-right: 0.6rem;
   margin-left: 0.6rem;
   color: var(--primary-grey) !important;
@@ -44,9 +51,8 @@ nav ul li  {
 }
 
 .navbar-nav > li > a:hover {
-  border-bottom-color: var(--primary-grey);  
+  border-bottom-color: var(--primary-grey);
 }
-
 
 /*------------------------- HEADER ----------------------------*/
 
@@ -75,7 +81,6 @@ nav ul li  {
 .main-info h1 {
   color: var(--primary-white);
   text-transform: uppercase;
-
 }
 
 /* TYPED TEXT */
@@ -95,7 +100,7 @@ nav ul li  {
 }
 
 .contact-links {
-margin-top: 7rem;
+  margin-top: 7rem;
 }
 .contact-links a {
   margin: 1rem;
@@ -120,9 +125,9 @@ margin-top: 7rem;
 .about-heading {
   color: var(--primary-grey);
   text-transform: uppercase;
-} 
+}
 
-@media(max-width: 468px) {
+@media (max-width: 468px) {
   .about-img {
     width: 10rem;
   }
@@ -131,18 +136,18 @@ margin-top: 7rem;
 /*------------------------- PROJECTS ----------------------------*/
 
 .portfolio-wrapper {
-  padding: 5rem 0; 
-  background: var(--primary-grey);   
+  padding: 5rem 0;
+  background: var(--primary-grey);
 }
 
-.image-box-wrapper {  
+.image-box-wrapper {
   margin-left: 5rem;
   margin-right: 5rem;
 }
 
-.portfolio-images { 
+.portfolio-images {
   width: 15rem;
-  margin: 1rem; 
+  margin: 1rem;
 }
 
 /* OVERFLOW */
@@ -156,9 +161,9 @@ margin-top: 7rem;
   opacity: 0;
   background: var(--primary-grey);
   width: 15rem;
-  height: 10rem; 
-  margin: 1rem; 
-  top: 0; 
+  height: 10rem;
+  margin: 1rem;
+  top: 0;
   cursor: pointer;
 }
 
@@ -184,15 +189,15 @@ margin-top: 7rem;
 
 /* OVERFLOW BOX */
 .popupbox-wrapper {
-  display: flexbox;  
+  display: flexbox;
   margin-top: 60px;
-  padding: 10px;  
+  padding: 10px;
 }
 
 .portfolio-popupbox-image {
   justify-self: center;
   align-self: center;
-  width: 80%;  
+  width: 80%;
   place-content: center;
 }
 
@@ -214,36 +219,36 @@ margin-top: 7rem;
 .footer {
   display: flex;
   justify-content: center;
-  align-items: center; 
-  height: 3rem;     
+  align-items: center;
+  height: 3rem;
 }
 
 /*------------------------- SKILLS ----------------------------*/
 
 .skills {
-  padding: 5rem 0; 
-  background-color: lightgray;  
+  padding: 5rem 0;
+  background-color: lightgray;
 }
 
-.skills-items-wrapper {   
-   display:flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   margin-left: 5rem;
-   margin-right: 5rem;
+.skills-items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .skills-item {
   display: inline-block;
   width: 15rem;
   padding: 0.5rem;
-  background-color: darkgray;   
+  background-color: darkgray;
   border: solid 1px grey;
-  border-radius: 8px;  
-  margin: 1rem;  
+  border-radius: 8px;
+  margin: 1rem;
 }
 
-.skills-item > div {  
+.skills-item > div {
   text-align: center;
-  justify-self: center;  
+  justify-self: center;
 }
