@@ -7,7 +7,8 @@ import devConnector from "../images/dev-connector.jpg";
 import ticTacToe from "../images/tic-tac-toe.jpg";
 import calcucalator from "../images/calculator.jpg";
 import taskList from "../images/task-list.jpg";
-import weatherApp from "../images/weather.jpg"
+import weatherApp from "../images/weather.jpg";
+import portfolioProject from "../images/portfolio.jpg";
 
 const Portfolio = () => {
 
@@ -43,6 +44,21 @@ const Portfolio = () => {
     PopupboxManager.open({ content, config: {titleBar: {text: "Weather App"}}})
   }  
 
+  // Portfolio Popup Box
+  const popupboxPortfolio = () => {    
+    const content = (
+    <>
+      <img className="portfolio-popupbox-image" src={portfolioProject} alt="Portfolio Project Screenshot" />
+      <p className="popup-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      </p>     
+      <b className="popup-text">GitHub:</b> <a className="project-link" onClick={ () => window.open("https://github.com/IrynaKysil/portfolio-react", "_blank")}>https://github.com/IrynaKysil/portfolio-react</a>
+      <br />
+      <b className="popup-text">Website:</b> <a className="project-link" onClick={ () => window.open("https://irynakysil.github.io/portfolio-react/", "_blank")}>https://irynakysil.github.io/portfolio-react/</a>
+    </>
+    )
+    PopupboxManager.open({ content, config: { titleBar: {text: "Portfolio Site"}} })
+  }
 
   // Task List Popup Box
   const popupboxTaskList = () => {    
@@ -111,6 +127,13 @@ const Portfolio = () => {
             <img className="portfolio-images" src={weatherApp} alt="WeatherApp Project Screenshot" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="search-icon" icon={faSearchPlus} />
+          </div>
+
+          {/* Portfolio */}
+          <div className="portfolio-image-box" onClick={popupboxPortfolio}>
+            <img className="portfolio-images" src={portfolioProject} alt="Portfolio Project Screenshot" />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="search-icon" icon={faSearchPlus} />          
           </div>
 
           {/* Task List */}
