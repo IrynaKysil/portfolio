@@ -5,8 +5,6 @@ import { faGithub} from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 
-
-
 const Header = () => {
   const githubIconWhite = <FontAwesomeIcon color="white" size="4x" icon={faGithub} />; 
   const linkedinIconWhite = <FontAwesomeIcon color="white" size="4x" icon={faLinkedin} />;  
