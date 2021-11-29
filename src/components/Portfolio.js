@@ -7,6 +7,7 @@ import devConnector from "../images/dev-connector.jpg";
 import ticTacToe from "../images/tic-tac-toe.jpg";
 import calcucalator from "../images/calculator.jpg";
 import taskList from "../images/task-list.jpg";
+import weatherApp from "../images/weather.jpg"
 
 const Portfolio = () => {
 
@@ -25,6 +26,23 @@ const Portfolio = () => {
     )
     PopupboxManager.open({ content, config: {titleBar: {text: "DevConnector App"}}})
   }
+
+// WeatherApp Popup Box
+  const popupboxWeatherApp = () => {    
+    const content = (
+    <>
+      <img className="portfolio-popupbox-image" src={weatherApp} alt="Weahter App Project..." />
+      <p className="popup-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      </p>     
+      <b className="popup-text">GitHub:</b> <a className="project-link" onClick={ () => window.open("https://github.com/IrynaKysil/weather-app-js", "_blank")}>https://github.com/IrynaKysil/weather-app-js</a>
+      <br />
+      <b className="popup-text">Website:</b> <a className="project-link" onClick={ () => window.open("https://irynakysil.github.io/weather-app-js/", "_blank")}>https://irynakysil.github.io/weather-app-js/</a>
+    </>
+    )
+    PopupboxManager.open({ content, config: {titleBar: {text: "Weather App"}}})
+  }  
+
 
   // Task List Popup Box
   const popupboxTaskList = () => {    
@@ -84,6 +102,13 @@ const Portfolio = () => {
           {/* Dev Connector */}        
           <div className="portfolio-image-box" onClick={popupboxDevConnector}>            
             <img className="portfolio-images" src={devConnector} alt="Dev Connector Project Screenshot" />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="search-icon" icon={faSearchPlus} />
+          </div>
+
+          {/* Weather App */}
+          <div className="portfolio-image-box" onClick={popupboxWeatherApp} >
+            <img className="portfolio-images" src={weatherApp} alt="WeatherApp Project Screenshot" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="search-icon" icon={faSearchPlus} />
           </div>
